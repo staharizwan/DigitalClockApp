@@ -28,13 +28,13 @@ body{
 #button-container{
     display: flex;
     justify-content: center;
-    align-items: center;
+    
     
 }
 
 .btn{
     font-family: monospace;
-    font-size: 1rem;
+    font-size: 24px;
     font-weight: bold;
     height: 50px ;
     width: 150px;
@@ -43,4 +43,9 @@ body{
     backdrop-filter: blur(2px);
     color: whitesmoke;
     
+}
+
+.active {
+  background-color: blue; /* Blue color as an example */
+  color: #fff; /* White text color */
 }
