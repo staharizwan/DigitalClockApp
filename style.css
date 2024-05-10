@@ -4,22 +4,46 @@ background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
 margin : 0;
+height: 100vh;
+justify-content: center;
 }
 
-#clock-container{
-display: flex;
-justify-content: center;
-align-items: center;
-height: 100vh;
+#clock-container {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Align clock at the top of the container */
+    height: 25vh; /* Set container height to 25% of the viewport height */
 }
 
 #clock{
 font-family: monospace;
-font-size: 8rem;
+font-size: 6.5rem;
 font-weight: bold;
 text-align: center;
 color: white;
-/*backdrop-filter: blur(5px);
-background-color: hsla(0, 0%, 100%, 0.1);*/
-width: 50%;
+backdrop-filter: blur(5px);
+background-color: hsla(0, 0%, 100%, 0.1);
+width: 100%;
+}
+
+#button-container{
+display: flex;
+color: white;
+font-size: 2rem;
+align-items: center;
+justify-content: center;
+width: 700px;
+height: 100px;
+}
+
+.btn{
+font-family: monospace;
+font-weight: bold;
+color: white;
+background-color: transparent;
+margin: 0 50px;
+border-radius: 5px;
+display: inline-block;
+width: 120px;
+height: 40px;
 }
