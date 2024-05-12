@@ -72,19 +72,16 @@ document.getElementById("button-container").addEventListener("click", function()
 
 var buttonContainer = document.getElementById('button-container');
 
-// Add click event listener to the parent div
 buttonContainer.addEventListener('click', function(event) {
-    // Check if the clicked element is a button
+    // Checking if the clicked element is a button
     if (event.target && event.target.nodeName === 'BUTTON') {
-        // Get the text of the clicked button
+        // Getting the text of the clicked button
         var buttonText = event.target.innerText;
         
-        // Display the selected button text
+        // Displaying the selected button text
         document.getElementById('region-selected').innerText = buttonText;
     }
 });
-
-
 
 updateClock();
 setInterval(updateClock, 1000);

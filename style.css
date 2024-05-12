@@ -48,6 +48,7 @@ body{
 .btn:hover{
   background-color: rgba(119, 136, 153, 0.151);
 }
+
 #region-selected{
   height: 10vh;
   display: flex;
