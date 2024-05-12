@@ -10,7 +10,7 @@ function updateClock() {
       break;
 
      case 'usa':
-      hours = (hours - 6) % 24;
+      hours = (hours - 6 + 24) % 24;
       break;
 
      case 'ksa':
@@ -18,7 +18,7 @@ function updateClock() {
       break;
 
      case 'gmt':
-      hours = (hours - 2) % 24;
+      hours = (hours - 2 + 24) % 24;
       break;
 
      case 'cet':
@@ -60,6 +60,31 @@ document.getElementById("cet").addEventListener("click", function() {
   region = 'cet';
   updateClock();
 });
+
+/*
+document.getElementById("button-container").addEventListener("click", function(){
+  let selectedRegion = document.getElementById("button-container").value
+  document.getElementById("region-selected").innerText = selectedRegion
+})
+*/
+
+// Get the parent div containing all buttons
+
+var buttonContainer = document.getElementById('button-container');
+
+// Add click event listener to the parent div
+buttonContainer.addEventListener('click', function(event) {
+    // Check if the clicked element is a button
+    if (event.target && event.target.nodeName === 'BUTTON') {
+        // Get the text of the clicked button
+        var buttonText = event.target.innerText;
+        
+        // Display the selected button text
+        document.getElementById('region-selected').innerText = buttonText;
+    }
+});
+
+
 
 updateClock();
 setInterval(updateClock, 1000);

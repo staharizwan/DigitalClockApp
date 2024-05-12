@@ -11,12 +11,12 @@ body{
     display: flex;
     justify-content: center;
     align-items: center; /* Align clock at the top/center of the container */
-    height: 25vh; /* Set container height to 25% of the viewport height */
+    height: 20vh; /* Set container height to 25% of the viewport height */
 }
 
 #clock{
   font-family: monospace;
-  font-size: 6.5rem;
+  font-size: 5rem;
   font-weight: bold;
   text-align: center;
   color: white;
@@ -27,9 +27,7 @@ body{
 
 #button-container{
     display: flex;
-    justify-content: center;
-    
-    
+    justify-content: center;    
 }
 
 .btn{
@@ -42,10 +40,20 @@ body{
     background-color: transparent;
     backdrop-filter: blur(2px);
     color: whitesmoke;
+    cursor: pointer;
+    margin: 10px;
     
 }
 
-.active {
-  background-color: blue; /* Blue color as an example */
-  color: #fff; /* White text color */
+.btn:hover{
+  background-color: rgba(119, 136, 153, 0.151);
+}
+#region-selected{
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  color: rgb(250, 250, 250);
+  font-size: 24px;
+  font-weight: bold;
+  font-family: monospace;
 }
