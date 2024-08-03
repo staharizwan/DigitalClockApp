@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Digital Clock</title>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='style.css') }}">
+
+    <!--<link type="text/javascript"  src="{{url_for('static', filename='index.js')}}"-->
+</head>
+<body>
+
+<div id = "clock-container">
+    <div id="clock">
+        00:00:00
+    </div>
+</div>
+<div id="region-selected">CET</div>
+<div id="button-container">
+        <button class ="btn" id="pk">Pakistan</button>
+        <button class ="btn" id="usa">USA</button>
+        <button class ="btn" id="ksa">KSA</button>
+        <button class ="btn" id="gmt">GMT</button>
+        <button class ="btn" id="cet">CET</button>
+</div>
+
+<script src="{{ url_for('static', filename='index.js') }}"></script>
+</body>
+</html>
